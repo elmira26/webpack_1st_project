@@ -1,0 +1,26 @@
+include _mixins
+header 
+  .navbox.box 
+    ul.navbox-list 
+      +navLink("#", "navbox-list__icon", "nav-link-header","Компания","Портфолио","Проектирование", "Ресторанам","Застройщикам","Гос.заказчикам","Таблет-питание","Сервис","Контакты","info@stolovay.ru","8 495 790-72-05")
+  .header
+    .header-logo 
+      +image('restaurant','header__icon') 
+      .header__title Столовая.РУ
+    .searchbox 
+      .searchbox-drop
+        button(href="#" data-dropdown='drop1' onclick='dropDown()' aria-controls='drop1' aria-expanded=false class='dropbtn') Вce
+          +image('triangle','searchbox-drop__icon' ) 
+          ul(id="myDropdown" data-dropdown-content class="dropdown-content" aria-hidden=true)
+            +navLink("#","header-btn__icon","header-btn__item","I'am","the right","thing","you need🤡")          
+      .searchbox-field
+        input(type="text")
+      .searchbox-btn 
+        button 
+          +image('lens','searchbox-btn__icon')
+    .items
+      ul.header-items
+        +navLink('#','header-list__icon','header-link__item','Мы на портале поставщики','Сумма')
+    
+        
+    

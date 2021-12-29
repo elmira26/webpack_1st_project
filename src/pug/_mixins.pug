@@ -1,0 +1,28 @@
+mixin image(name, classname)
+  img(src=require(`./images/${name}.png`) alt='name' class=`${classname}`)
+
+mixin navLink(link,classImg,classLink,...items) 
+  each item in items
+   
+    if item === "8 495 790-72-05" 
+      li 
+        img(src=require(`./images/phone-call.png`) alt='phone-call' class=`${classImg}`) 
+        a(href=link class = `${classLink}`)=item 
+    else if item === "Сумма" 
+      li 
+        img(src=require(`./images/shopping-basket.png`) alt='phone-call' class=`${classImg}`) 
+        a(href=link class = `${classLink}`)=item 
+    else if item === "Мы на портале поставщики" 
+      li 
+        img(src=require(`./images/group.png`) alt='phone-call' class=`${classImg}`) 
+        a(href=link class = `${classLink}`)=item 
+    else if item === "info@stolovay.ru"
+      li 
+        img(src=require(`./images/message.png`) alt='message' class=`${classImg}`) 
+        a(href=link class = `${classLink}`)= item
+        
+   
+    else if item
+      li
+        a(href=link class = `${classLink}`)=item
+   

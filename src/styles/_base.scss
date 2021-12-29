@@ -1,0 +1,21 @@
+@import 'variables';
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+  body {
+    width: 100%;
+    font-size: $fontBase;
+  }
+  .box{
+    width: 120rem;
+  }
+
+  

@@ -1,0 +1,65 @@
+ @import 'variables';
+ 
+ // LIST for NAV & HEADER
+
+ .navbox-list__icon {
+   width: 35px;
+   height: 30px;
+   padding-right: 10px;
+ }
+
+ .nav-link-header {
+   font-size: $fontLinks;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: $colWhite;
+ }
+
+ .header {
+   &-btn>li {
+     list-style: none;
+     text-align: left;
+   }
+
+   &-btn__item {
+     list-style: none;
+     font-size: $fontBase;
+     color: $colGrey;
+     text-decoration: none;
+   }
+
+   &-list__icon {
+     height: 50px;
+     margin-bottom: 2rem;
+     border-radius: 30px;
+     padding: 2px;
+     -moz-border-radius: 30px;
+     -webkit-border-radius: 30px;
+     border-radius: 30px;
+     border: 1px solid $colGrey;
+     -moz-outline-radius: 30px;
+   }
+
+   &-link__item {
+     color: $colGrey;
+     text-decoration: none;
+     display: inline-block;
+     width: 50%;
+   }
+
+   &-items>li {
+     list-style: none;
+   }
+ }
+ //DROPDOWN
+ .dropdown-content{
+   display: none;
+   position: absolute;
+   min-width: 160px;
+   box-shadow: 0 1rem 1.2rem 0 black;
+   z-index: 1;
+ }
+ //dropdown show
+ .show{
+   display: block;
+ }
